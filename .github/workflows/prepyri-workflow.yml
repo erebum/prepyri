@@ -1,9 +1,9 @@
-name: Run Prepyri when new texts are added
+name: Run prepyri script on new files
 
 on:
   push:
     paths:
-      - 'in/**'
+      - 'in/**'  
 
 jobs:
   run-script:
@@ -16,7 +16,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'  
+          python-version: '3.10'
           
       - name: Run prepyri script
-        run: python script/prepyri.py
+        run: |
+          cd script
+          python prepyri.py
