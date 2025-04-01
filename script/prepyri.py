@@ -418,4 +418,4 @@ warnings:
             log_write.write(to_log)
 
         # Archiving the input file
-        os.rename(f"./in/{os.path.basename(files)}", f"./archive/{os.path.basename(files)}")
+        os.rename(f"../in/{os.path.basename(files)}", f"../archive/{os.path.basename(files)}")
