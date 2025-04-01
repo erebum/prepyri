@@ -3,7 +3,7 @@ name: Run prepyri script on new files
 on:
   push:
     paths:
-      - 'in/**'  
+      - 'in/**'  # This will trigger the workflow when files in the "in" folder change
 
 jobs:
   run-script:
@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        
+      - name: Debug directory contents before
+        run: |
+          echo "Repository contents:"
+          ls -la
+          echo "In directory contents:"
+          ls -la in/
         
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -22,3 +29,20 @@ jobs:
         run: |
           cd script
           python prepyri.py
+          
+      - name: Check results
+        run: |
+          echo "Out directory contents:"
+          ls -la out/
+          echo "Log directory contents:"
+          ls -la log/
+          echo "Archive directory contents:"
+          ls -la archive/
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add out/ log/ archive/
+          git commit -m "Processed new files in 'in' folder" || echo "No changes to commit"
+          git push
