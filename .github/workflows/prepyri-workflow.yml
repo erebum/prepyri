@@ -13,13 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         
-      - name: Debug directory contents before
-        run: |
-          echo "Repository contents:"
-          ls -la
-          echo "In directory contents:"
-          ls -la in/
-        
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -30,19 +23,13 @@ jobs:
           cd script
           python prepyri.py
           
-      - name: Check results
-        run: |
-          echo "Out directory contents:"
-          ls -la out/
-          echo "Log directory contents:"
-          ls -la log/
-          echo "Archive directory contents:"
-          ls -la archive/
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y-%m-%d-T%H:%M:%S')" >> $GITHUB_ENV
           
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add out/ log/ archive/ in/
-          git commit -m "Processed texts in /in. Moved the input to /archive." || echo "No changes to commit"
+          git commit -m "$NOW Processed texts in /in. Moved the input to /archive." || echo "No changes to commit"
           git push
