@@ -5,13 +5,14 @@ from datetime import datetime # For timestamps in the log
 
 version = """
 Current Version:
-\t0.1.0beta Pre-Papyri
-\t01/04/2025
+\t0.1.1beta Pre-Papyri
+\t03/04/2025
 \tCorvin Ziegeler """
 
 ##------------------------------------
 ## Current Version:
-## 01/04/2025 Corvin Ziegeler
+## 03/04/2025 Corvin Ziegeler
+## For the log of changes consider commit history. 
 ##------------------------------------
 
 ## All the Functions necessary: 
@@ -43,7 +44,7 @@ simsubs = {
     r"\+": "*stauros*",
     r"·": "*middot*",
     r"⳿": "*word-sep-apostrophe*",
-    r"ⲓ̈": "ⲓ(¨)",
+    r"ⲓ̈": " ⲓ(¨)",
     r":": "*dipunct*",
 
     ## SQUARE BRACKETS
@@ -206,7 +207,7 @@ def count_dots(txt, mask_patterns=None):
     def replace_dots(match):
         dot_sequence = match.group(0)
         dot_count = dot_sequence.count(".")
-        return f"{dot_count}."
+        return f".{dot_count}"
 
     processed_text = re.sub(dot_pattern, replace_dots, masked_text)
 
@@ -243,6 +244,15 @@ def split_lines(splitl):
             current_frag.append(line)
     return(frag_list)
 
+# Ensure correct whitespacing  with hyphens, usinged in line_number_list
+def ensure_hyphen_whitespace(line):
+    # maybe flatte hyphens earlier?
+    pattern = r"(?<=\d\.)\s+(?=[-‐‑−–—―])"
+    # Remove space between . and - 
+    result = re.sub(pattern, '', line)
+    # Add a space between - and following char 
+    result = re.sub(r"(?<=\d\.)([-‐‑−–—―])", r"\1 ", result)
+    return result
 
 # Line Number Magic
 # Perhaps include the Recto/Verso Detection in here directly?
@@ -295,7 +305,15 @@ def line_number_list(lst):
                 k += 1  # Move up item
         else:
             i += 1
-    return result, warnings_str
+
+        # Fix whitespaces for hyphens
+        result_clean = []
+        for line in result: 
+           result_clean.append(ensure_hyphen_whitespace(line)) 
+
+    return result_clean, warnings_str
+
+
 
 # The workflow that combines the above.
 def annotate_lines(torep, linenumbers=True, rectoverso=False):
@@ -341,7 +359,6 @@ def annotate_lines(torep, linenumbers=True, rectoverso=False):
     for frag_numbered in step_list:
         result = result + "".join(frag_numbered)
     
-
     return(result, warnings)
 #
 # def additional_warnings(string):
