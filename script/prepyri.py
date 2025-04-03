@@ -402,8 +402,9 @@ warnings:
 -----------------------------------
         """
         return(log_boilerplate)
-   
-    for files in os.listdir("../in/"):
+
+    # skip non txts 
+    for files in (f for f in os.listdir("../in/") if f.endswith(".txt")):
         to_replace = ""
         warnings = ""
         # read and modify the files 
@@ -425,7 +426,7 @@ warnings:
 
         print(to_log)
 
-        with open(f"../out/{files}_out", mode="w", encoding="utf-8") as f_write:
+        with open(f"../out/out_{files}", mode="w", encoding="utf-8") as f_write:
             f_write.write(to_replace)
 
         to_log = log_boilerplate(files, warnings) + to_log
