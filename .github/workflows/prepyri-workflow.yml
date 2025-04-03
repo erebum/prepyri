@@ -3,7 +3,7 @@ name: Run prepyri script on new files
 on:
   push:
     paths:
-      - 'in/**'  # This will trigger the workflow when files in the "in" folder change
+      - 'in/**'  
 
 jobs:
   run-script:
@@ -43,6 +43,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add out/ log/ archive/
-          git commit -m "Processed new files in 'in' folder" || echo "No changes to commit"
+          git add out/ log/ archive/ in/
+          git commit -m "Processed texts in /in. Moved the input to /archive." || echo "No changes to commit"
           git push
