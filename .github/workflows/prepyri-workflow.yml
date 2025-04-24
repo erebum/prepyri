@@ -1,31 +1,31 @@
-name: Run prepyri script on new files
+name: Continuous processing of files in 'in'.
 
 on:
   push:
     paths:
-      - 'in/**'  
+      - "in/**"
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-          
+          python-version: "3.10"
+
       - name: Run prepyri script
         run: |
           cd script
           python prepyri.py
-          
+
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y-%m-%d-T%H:%M:%S')" >> $GITHUB_ENV
-          
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
