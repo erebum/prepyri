@@ -1,0 +1,103 @@
+-----------------------------------
+    
+Current Version:
+	0.1.1beta Pre-Papyri
+	03/04/2025
+	Corvin Ziegeler 
+processing: 
+    	nov2024file (1).txt
+time:
+    	2025-05-15T12:29:40
+warnings: 
+    	Line Number Warning: P.Mon.Epiph. 283
+ 	with line numbers below 1.
+	Line Number Warning: P.Mon.Epiph. 136
+ 	with line numbers below 1.
+	Line Number Warning: P.Mon.Epiph. 109
+ 	with line numbers below 1.
+	Line Number Warning: P.Mon.Epiph. 111
+ 	with line numbers below 1.
+	Line Number Warning: P.Mon.Epiph. 217
+ 	with line numbers below 1.
+
+-----------------------------------
+        
+
+
+
+----------
+Simple Substitutions
+----------
+
+
+P.Mon.Epiph. 297
+*rho-cross* ⲁⲣⲓ ⲧⲁⲅⲁⲡⲏ ⲉⲣϣⲁⲛ-
+ ⲓ(¨)ⲉⲍⲉⲕⲓⲏⲗ ϣⲏⲙ*word-sep-apostrophe* ⲉ ⲓ(¨) ⲉϩⲟⲩⲛ ⲛⲁⲕ,
+ϩⲱⲛ, ⲉⲧⲟⲟⲛⲧ̄ϥ̄ ⲕⲁⲗⲱⲥ, ⲉⲧ̄ⲙ̄ⲧⲣⲉϥ-
+ϫⲟⲟⲥ ⲛ̄ⲗⲁⲁⲩ ⲛ̄ⲣⲱⲙⲉ *middot* ⲉⲓⲙⲏ ⲉⲛⲉϥ-
+5
+ⲉⲓⲟⲧⲉ ⲙ̄ⲙⲁⲧⲉ *middot* ⲁⲩⲱ ⲛ̄ⲧⲟⲟⲩ ϩⲱⲟⲩ
+ⲛ̄ⲥⲉⲧ̄ⲙ̄ϫⲟⲟⲥ ⲛ̄ⲣⲱⲙⲉ *middot* ⲛ̄ϥ̄ϫⲟⲟⲥ
+ⲛⲁⲩ ⲛⲥⲉⲥⲓⲕ̄ⲧ̄ ⲟⲩⲙⲁϫⲉ ⲛ̄ⲥⲟⲩⲟ
+ⲛⲥⲉⲛⲁⲧ̄ⲥ̄ ⲛ̄̄ⲛⲟⲉⲓⲧ*word-sep-apostrophe* ⲉϥϣⲟⲟ-
+ⲙⲉ, ⲛ̄ϥ̄ⲛ̄ⲧ̄ⲥ̄ ⲉϩⲟⲩⲛ ⲛⲁⲕ
+10
+ⲛ̄ⲅ̄ⲛ̄ⲧ̄ⲥ̄ ⲛ̄ⲅ̄ⲕⲁⲁⲥ ϩⲓ-
+ϫⲙ̄ⲡⲣⲟ *middot* ⲙ̄
+
+----------
+Moving Hyphens
+----------
+
+
+P.Mon.Epiph. 297
+*rho-cross* ⲁⲣⲓ ⲧⲁⲅⲁⲡⲏ ⲉⲣϣⲁⲛ
+- ⲓ(¨)ⲉⲍⲉⲕⲓⲏⲗ ϣⲏⲙ*word-sep-apostrophe* ⲉ ⲓ(¨) ⲉϩⲟⲩⲛ ⲛⲁⲕ,
+ϩⲱⲛ, ⲉⲧⲟⲟⲛⲧ̄ϥ̄ ⲕⲁⲗⲱⲥ, ⲉⲧ̄ⲙ̄ⲧⲣⲉϥ
+-ϫⲟⲟⲥ ⲛ̄ⲗⲁⲁⲩ ⲛ̄ⲣⲱⲙⲉ *middot* ⲉⲓⲙⲏ ⲉⲛⲉϥ
+5
+-ⲉⲓⲟⲧⲉ ⲙ̄ⲙⲁⲧⲉ *middot* ⲁⲩⲱ ⲛ̄ⲧⲟⲟⲩ ϩⲱⲟⲩ
+ⲛ̄ⲥⲉⲧ̄ⲙ̄ϫⲟⲟⲥ ⲛ̄ⲣⲱⲙⲉ *middot* ⲛ̄ϥ̄ϫⲟⲟⲥ
+ⲛⲁⲩ ⲛⲥⲉⲥⲓⲕ̄ⲧ̄ ⲟⲩⲙⲁϫⲉ ⲛ̄ⲥⲟⲩⲟ
+ⲛⲥⲉⲛⲁⲧ̄ⲥ̄ ⲛ̄̄ⲛⲟⲉⲓⲧ*word-sep-apostrophe* ⲉϥϣⲟⲟ
+-ⲙⲉ, ⲛ̄ϥ̄ⲛ̄ⲧ̄ⲥ̄ ⲉϩⲟⲩⲛ ⲛⲁⲕ
+10
+ⲛ̄ⲅ̄ⲛ̄ⲧ̄ⲥ̄ ⲛ̄ⲅ̄ⲕⲁⲁⲥ ϩⲓ
+-ϫⲙ̄ⲡⲣⲟ *middot* ⲙ̄
+
+----------
+Counting Dots
+----------
+
+
+P.Mon.Epiph. 297
+*rho-cross* ⲁⲣⲓ ⲧⲁⲅⲁⲡⲏ ⲉⲣϣⲁⲛ
+- ⲓ(¨)ⲉⲍⲉⲕⲓⲏⲗ ϣⲏⲙ*word-sep-apostrophe* ⲉ ⲓ(¨) ⲉϩⲟⲩⲛ ⲛⲁⲕ,
+ϩⲱⲛ, ⲉⲧⲟⲟⲛⲧ̄ϥ̄ ⲕⲁⲗⲱⲥ, ⲉⲧ̄ⲙ̄ⲧⲣⲉϥ
+-ϫⲟⲟⲥ ⲛ̄ⲗⲁⲁⲩ ⲛ̄ⲣⲱⲙⲉ *middot* ⲉⲓⲙⲏ ⲉⲛⲉϥ
+5
+-ⲉⲓⲟⲧⲉ ⲙ̄ⲙⲁⲧⲉ *middot* ⲁⲩⲱ ⲛ̄ⲧⲟⲟⲩ ϩⲱⲟⲩ
+ⲛ̄ⲥⲉⲧ̄ⲙ̄ϫⲟⲟⲥ ⲛ̄ⲣⲱⲙⲉ *middot* ⲛ̄ϥ̄ϫⲟⲟⲥ
+ⲛⲁⲩ ⲛⲥⲉⲥⲓⲕ̄ⲧ̄ ⲟⲩⲙⲁϫⲉ ⲛ̄ⲥⲟⲩⲟ
+ⲛⲥⲉⲛⲁⲧ̄ⲥ̄ ⲛ̄̄ⲛⲟⲉⲓⲧ*word-sep-apostrophe* ⲉϥϣⲟⲟ
+-ⲙⲉ, ⲛ̄ϥ̄ⲛ̄ⲧ̄ⲥ̄ ⲉϩⲟⲩⲛ ⲛⲁⲕ
+10
+ⲛ̄ⲅ̄ⲛ̄ⲧ̄ⲥ̄ ⲛ̄ⲅ̄ⲕⲁⲁⲥ ϩⲓ
+-ϫⲙ̄ⲡⲣⲟ *middot* ⲙ̄
+
+----------
+Annotating Lines
+----------
+
+
+P.Mon.Epiph. 297
+1. *rho-cross* ⲁⲣⲓ ⲧⲁⲅⲁⲡⲏ ⲉⲣϣⲁⲛ
+2.-  ⲓ(¨)ⲉⲍⲉⲕⲓⲏⲗ ϣⲏⲙ*word-sep-apostrophe* ⲉ ⲓ(¨) ⲉϩⲟⲩⲛ ⲛⲁⲕ,
+3. ϩⲱⲛ, ⲉⲧⲟⲟⲛⲧ̄ϥ̄ ⲕⲁⲗⲱⲥ, ⲉⲧ̄ⲙ̄ⲧⲣⲉϥ
+4.- ϫⲟⲟⲥ ⲛ̄ⲗⲁⲁⲩ ⲛ̄ⲣⲱⲙⲉ *middot* ⲉⲓⲙⲏ ⲉⲛⲉϥ
+5.- ⲉⲓⲟⲧⲉ ⲙ̄ⲙⲁⲧⲉ *middot* ⲁⲩⲱ ⲛ̄ⲧⲟⲟⲩ ϩⲱⲟⲩ
+6. ⲛ̄ⲥⲉⲧ̄ⲙ̄ϫⲟⲟⲥ ⲛ̄ⲣⲱⲙⲉ *middot* ⲛ̄ϥ̄ϫⲟⲟⲥ
+7. ⲛⲁⲩ ⲛⲥⲉⲥⲓⲕ̄ⲧ̄ ⲟⲩⲙⲁϫⲉ ⲛ̄ⲥⲟⲩⲟ
+8. ⲛⲥⲉⲛⲁⲧ̄ⲥ̄ ⲛ̄̄ⲛⲟⲉⲓⲧ*word-sep-apostrophe* ⲉϥϣⲟⲟ
+9.- ⲙⲉ, ⲛ̄ϥ̄ⲛ̄ⲧ̄ⲥ̄ ⲉϩⲟⲩⲛ ⲛⲁⲕ
+10. ⲛ̄ⲅ̄ⲛ̄ⲧ̄ⲥ̄ ⲛ̄ⲅ̄ⲕ
